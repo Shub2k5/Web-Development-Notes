@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Studio</title>
+    <style>
+        form{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            max-width: 600px;
+            background: black;
+            padding: 40px;
+            margin: 0;
+            border-radius: 20px;
+            text-align: left;
+            box-shadow: 10px 10px 15px black;
+        }
+        .body{
+            background-color: burlywood;
+        }
+        h1{
+            color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            text-decoration: solid underline 4px;
+            text-shadow: 3px 3px 3px black;
+        }
+        label{
+            font-family: cursive;
+            color: powderblue;
+            font-weight: bold;
+            text-shadow: 0 0 1px white;
+            font-size: 20px;
+        }
+        textarea{
+            background-color: white;
+            border-radius: 20px;
+            border: 3px solid plum;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+        }
+        .submit{
+            background-color: blue;
+            color: white;
+            box-shadow: 0 0 10px white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            height: 40px;
+            width: 100px;
+            font-weight: bold;
+            border-radius: 20px 20px 20px 20px;
+        }
+        .date{
+            background-color: white;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 17px;
+            /* font-weight: bold; */
+            height: 15px;
+            width: 300px;
+            padding: 10px 20px;
+            border-radius: 20px 20px 20px 20px;
+            border: 3px solid plum;
+        }
+    </style>
+</head>
+<body class="body">
+    <div>
+        <center>
+        <h1>Studio Rental Application Form</h1>
+    <form action=""><b>
+        <label for="" style="color: white;">Please fill out the details for the allotment of the studio as per your demands :</label>
+        <br><br>
+        <label for="">*Organisation</label>
+        <br><br>
+        <textarea name="" id="" rows="1" cols="60" placeholder="Type Here" required></textarea>
+        <br><br>
+        <label for="">*Main Contact</label>
+        <br><br>
+        <textarea name="" id="" rows="1" cols="40" placeholder="First" required></textarea>
+        <textarea name="" id="" rows="1" cols="40" placeholder="Last" required></textarea>
+        <br><br>
+        <label for="">*Email Address</label>
+        <br><br>
+        <textarea name="" id="" rows="1" cols="60" placeholder="@gamil.com" required></textarea>
+        <br><br>
+        <label for="">*Please provide a brief description of your rental request</label>
+        <br><br>
+        <textarea name="" id="" rows="5" cols="70" placeholder="What do you desire?"required></textarea>
+        <br><br>
+        <label for="">*Start Date</label>
+        <br><br>
+        <input class="date" type="date"required>
+        <br><br>
+        <label for="">*End Date</label>
+        <br><br>
+        <input class="date" type="date"required>
+        <br><br><br>
+        <input type="Submit" value="Submit" class="submit"></b>
+    </form></center>
+    </div>
+    <p>Thank You for choosing us!</p>
+</body>
+</html>

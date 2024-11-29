@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            height: 100vh;
+            background-color:grey;
+            padding: 10px 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .childOne{
+            height: 300px;
+            width: 500px;
+            /* background-color: black;
+            box-shadow: 3px 2px 5px 0 white; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdmygSP2usksozWjBQPDxHXZMevEc3sNP_Q&s");
+        }
+        .childOne:hover{
+            background-color: burlywood;
+            transition: 3s ease-in;
+            transform: scale(1.5);
+        }
+        .childTwo{
+            height: 300px;
+            width: 500px;
+        }
+        .childTwo:hover{
+            transition: 3s ease-in;
+            transform: scale(1.4);
+        }
+        img{
+            height: 300px;
+            width: 500px;
+        }
+        h1{
+            color: beige;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            padding: 0 25px;
+            font-size: 30px;
+        }
+        p{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            padding: 0 25px;
+            font-size: 15px;
+            align-items: center;
+        }
+        hr{
+            background-color: red;
+            height: 1px;
+            width: 300px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="childOne">
+            <h1>The Beautiful State</h1>
+            <hr>
+            <b><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt expedita tempora. 
+                Dignissimos nulla laudantium tempore 
+                illum ratione? Laborum eaque optio dolorem recusandae laboriosam dolorum rem. Quidem dolorem qui alias?</p></b>
+        </div>
+        <div class="childTwo">
+            <img src="https://images.pexels.com/photos/11594022/pexels-photo-11594022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+             alt="">
+        </div>
+    </div>
+</body>
+</html>

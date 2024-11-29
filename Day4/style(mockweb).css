@@ -1,0 +1,48 @@
+nav{
+    background-image: url("https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 12vh;
+}
+.logo{
+    flex: 1;
+}
+.menus{
+    font-weight: bold;
+    flex: 3;
+    font-size: 18px;
+}
+.menus ul{
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    list-style-type: none;
+    color: white;
+}
+.menus ul li:hover{ 
+transform: scale(1.1);
+transition: 0.5s ease-in;
+text-decoration: 3px underline black;
+background-color: powderblue;
+color: white;
+font-size: 20px;
+}
+.menus ul li{
+    padding: 23px;
+}
+.menus ul li a{
+    text-decoration: none;
+    padding-right: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Nosifer", serif; */
+    font-family: "Parkinsans", sans-serif;
+}
+.pic{
+    height: 100px;
+    width: 100px;
+}
