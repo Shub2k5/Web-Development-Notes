@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        .parent{
+            height: 100vh;
+            gap: 20px;
+            flex-wrap: wrap;
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent div{
+            height: 600px;
+            width: 300px;
+        }
+        .childOne{
+            background-image: url("https://images.pexels.com/photos/3027216/pexels-photo-3027216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-position: center;
+        }
+        .childTwo{
+            background-image: url("https://images.pexels.com/photos/3027216/pexels-photo-3027216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-position: center;
+            background-size: cover;
+        }
+        .childThree{
+            background-image: url("https://images.pexels.com/photos/3027216/pexels-photo-3027216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-position: center;
+            background-size: cover;
+        }
+        @media (max-width:1028px){
+            .parent div{
+                height: 300px;
+                width: 300px;
+            }
+        }
+        @media (max-width:543px){
+            .parent div{
+                height: 300px;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="childOne"></div>
+        <div class="childTwo"></div>
+        <div class="childThree"></div>
+    </div>
+</body>
+</html>
