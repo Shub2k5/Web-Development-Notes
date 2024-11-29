@@ -178,3 +178,8 @@ button {
 button i {
     font-size: 20px;
 }
+.para{
+    background-color: black;
+    color: white;
+    height: 160vh
+}
