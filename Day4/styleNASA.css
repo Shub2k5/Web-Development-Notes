@@ -8,6 +8,8 @@
     height: 14vh;
     width: 209vh;
     position: absolute;
+}
+.nav1:hover{
     position: fixed;
     z-index: 10;
 }
