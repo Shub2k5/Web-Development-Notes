@@ -155,3 +155,26 @@ p{
     text-decoration: none;
     padding: 6px 8px 7px 8px;
 }
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f64137;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+button i {
+    font-size: 20px;
+}
