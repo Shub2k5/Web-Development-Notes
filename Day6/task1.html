@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            height: 100vh;
+        }
+        .row1{
+            display: flex;
+            gap: 20px;
+            border: 3px solid black;
+            padding: 20px;
+            height: 90px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .row1child1{
+            border: 3px solid black;
+            width: 25%;
+            height: 60px;
+            padding: 10px;
+        }
+        .row1child2{
+            border: 3px solid black;
+            width: 25%;
+            height: 60px;
+            padding: 10px;
+        }
+        .row1child3{
+            border: 3px solid black;
+            width: 45%;
+            height: 60px;
+            padding: 10px;
+        }
+        .leftcolumn{
+            display: flex;
+            border: 3px solid black;
+            width: 45%;
+            height: 75vh;
+            margin-top: 10px;
+            margin-left: 10px; 
+       }
+       .coloumn1of1child1{
+            border: 3px solid black;
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 470%;
+            height: 130px;
+       }
+       .coloumn1of1child2{
+            border: 3px solid black;
+            margin-top: 140px;
+            margin-left: 50px;
+            width: 470%;
+            height: 130px;
+       }
+       .coloumn1of2{
+            margin-left: 300px;
+            border: 3px solid black;
+            margin-top: 50px;
+            width: 35%;
+            height: 400px;
+       }
+       .lowpart{
+            display: flex;
+       }
+       .rightcolumnrow1{
+            margin-top: 50px;
+            margin-right: 10px;
+            margin-left: 5%;
+            border: 3px solid black;
+            height: 140px;
+            width: 100vh;
+       }
+       .inrow1{
+            border: 3px solid black;
+            margin-top: 20px;
+            margin-left: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="row1child1"></div>
+            <div class="row1child2"></div>
+            <div class="row1child3"></div>
+        </div>
+        <div class="lowpart">
+            <div class="leftcolumn">
+                <div class="coloumn1of1">
+                    <div class="coloumn1of1child1"></div>
+                    <div class="coloumn1of1child2"></div>
+                </div>
+                <div class="coloumn1of2"></div>
+            </div>
+            <div class="rightcolumn">
+                <div class="rightcolumnrow1">
+                    <div class="inrow1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
