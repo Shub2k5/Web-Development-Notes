@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const car={
+            Name:"Mercedes Benz",
+            Model:"C-Class",
+            Year:2021
+        }
+
+        console.log("These are the values", Object.values(car));
+        console.log("These are the keys", Object.keys(car));
+
+        // nested object
+        const car2={
+            Name:"Ferrari",
+            Model:"812",
+            feature:{
+                color:["red", "white", "yellow"],
+                engine:"V12",
+                top_speed:'400km/hr'
+            }
+        }
+        
+        // console.log("These are the values", Object.values(car2));
+    </script>
+</body>
+</html>

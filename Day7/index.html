@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 500px;
+            width: 500px;
+            border: 3px solid underline;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" id="parent1" id="box"></div>
+    <script>
+        const changeparent=()=>{
+            document.getElementById("parent1").style.backgroundColor="yellow"
+            document.getElementById("parent1").style.borderRadius="60%"
+        }
+        setTimeout(()=>{
+            changeparent()
+        }, 4000)
+        // const changeName=()=>{
+        //     document.getElementById("name").innerHTML="Shub"
+        // }
+        // setTimeout(()=>{
+        //     changeName()
+        // },5000)
+        // console.log("This is JS");
+        // for(let i=1;i<=10;i++){
+        //     console.log(i)
+        // }
+        // let i=0;
+        // while(i<11){
+        //     console.log(`This is a while loop running ${i} times.`);
+        //     i++;
+        // }
+        // let i=10;
+        // do{
+        //     console.log(`This is a do while condition ${i}`);
+        //     i++;
+        // } while(i<20);
+    </script>
+</body>
+</html>

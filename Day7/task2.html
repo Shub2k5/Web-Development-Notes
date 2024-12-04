@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const age=[13,35,53,76,2,98,65,89]
+        const retired=age.filter(age=>age>60);
+        console.log(retired);
+        
+        // slice
+        const students=["Rohan","Sohan","Shub","Rudra","Sunny","Rohit"]
+        const slicedArray=students.slice(2,5)
+        console.log(slicedArray);
+
+        // include
+        console.log("Original Array", students);
+        const splicedArray=students.splice(2,2, "Rohit", "Sunny");
+        console.log(students);
+
+        // to check if something is in the checked array
+        const checkName=students.includes("Suraj")
+        console.log(checkName);
+
+        // find
+        const sampleNegative=students.at(-4)
+        console.log(sampleNegative);
+
+        // function
+        const name="Shub"
+        function myFunction(){
+            console.log(name);
+        }
+        myFunction()
+    </script>
+</body>
+</html>

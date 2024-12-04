@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id=""></div>
+    <script>
+        const vegetables = ["Raddish", "Potato", "Ladyfinger", "Eggplant"];
+        // to print something from a particular position
+        // this prints the item at 2 positon(numbering starts from 0)
+        console.log(vegetables[2]);
+        // to add a item in array
+        vegetables.push("bitterguard");
+        // vegetables.pop("Potato");
+        for(let x in vegetables){
+            console.log(`I like to eat ${vegetables[x]}`);
+        }
+        const reversedvegetables=vegetables.reverse()
+        console.log("This is the reversed order", reversedvegetables);
+        
+        const ages=[33,45,56,24,59,85,35]
+        // for sorting
+        console.log(ages.sort());
+        // for sorting in ascending order
+        console.log(ages.sort((a,b)=>a-b));
+        // for sorting in descending order
+        console.log(ages.sort((a,b)=>b-a));
+
+        // mapping
+        ages.map((x)=>{
+            console.log(`I am ${x} years old while using map 😂`); 
+        })
+        // forEach
+        ages.forEach((x)=>{
+            console.log(`I am ${x} years old while using map 😂`); 
+        })
+    </script>
+</body>
+</html>
