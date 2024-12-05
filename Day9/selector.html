@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section{
+            border: 5px solid black;
+            height: 100vh;
+            padding: 20px;
+            background-color: palegoldenrod;
+            font-size: 30px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        button{
+            background-color: black;
+            font-weight: bold;
+            color: white;
+            font-size: 15px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1 id="idSelector" class="classSelector">(Text will appear here)</h1>
+        <button onclick="idSelector()">Use ID</button>
+        <button onclick="classSelector()">Use Class</button>
+        <button onclick="querySelector2()">Use Query</button>
+    </div>
+    <script>
+        const idSelector = () => {
+            let element=document.getElementById("idSelector")
+            console.log(element)
+            element.innerHTML="I am Shub and I'm using idSelector."
+        }
+        const classSelector = () => {
+            let element=document.getElementById("classSelector")
+            document.getElementsByClassName("classSelector")[0].innerHTML="I am Shub and I'm using classSelector."
+        }
+        function querySelector2 () {
+            document.querySelector("#idSelector").innerHTML="I am Shub and I'm using querySelector."
+        }
+    </script>
+</body>
+</html>

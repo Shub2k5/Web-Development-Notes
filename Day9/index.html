@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checkAge{
+            background-color: black;
+            color: white;
+            border-radius: 20%;
+            height: 500px;
+            width: 500px;
+            align-items: center;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 25%;
+            padding: 20px;
+            padding: 60px;
+        }
+        button{
+            height: 25px;
+            padding: 1%;
+        }
+        span{
+            text-decoration: 2px solid underline white;
+        }
+        .bulb{
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #lightbulb{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .switch{
+            height: 25px;
+            padding: 1%;
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb">
+        <div id="lightbulb">
+        </div><br><br>
+        <button class="switch" onclick="lightbulb()">Change the color</button>
+    </div>
+
+
+    <div class="checkAge">
+        <h1>Check your aligibility</h1>
+        <br><br>
+        <button onclick="checkAge()">Click to enter your Age</button>
+        <br><br>
+        <h2>=> You are <span id="check">(Eligibility)</span></h2>
+    </div>
+    <script>
+        let value = false
+        const lightbulb = () => {
+            const bulb = document.getElementById("lightbulb")
+            if(value){
+                bulb.style.backgroundColor= "grey"
+                value = false; 
+            } else{
+                bulb.style.backgroundColor= "yellow"
+                value = true;
+            }
+        }
+
+
+
+        const checkAge=()=>{
+            let age=window.prompt("Please enter your age")
+            let check=document.getElementById("check")
+            if(age>=18){
+                check.innerHTML="Eligible to vote."
+            } else{
+                check.innerHTML="not Eligible to vote."
+            }
+        }
+    </script>
+</body>
+</html>
