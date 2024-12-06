@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine</title>
+        <style>
+            .section{
+                border: 5px solid black;
+                height: 100vh;
+                padding: 20px;
+                display: flex;
+            }
+            #box{
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                margin-top: 25px;
+                margin-left: 20%;
+                background-color: gray;
+                box-shadow:"10px 10px 100px 20px";
+                
+            }
+        </style>
+</head>
+<body>
+    <div class="section">
+        <div id="box" draggable="true"></div>
+        <div id="box" class="sunTwo" draggable="true"></div>
+    </div>
+
+    <script>
+        const sunlight=()=>{
+            let sun=document.getElementById("box")
+            let sunTwo=document.getElementsByClassName("sunTwo")[0]
+
+            sun.addEventListener("mouseenter",()=>{
+                sun.style.boxShadow="10px 10px 100px 10px yellow"
+                sun.style.backgroundColor="yellow"
+            })
+
+            sun.addEventListener("dragleave",()=>{
+                sun.style.boxShadow="10px 10px 100px 10px gray"
+                sun.style.backgroundColor="gray"
+            })
+
+            sunTwo.addEventListener("click",()=>{
+                sunTwo.style.boxShadow="10px 10px 100px 10px yellow"
+                sunTwo.style.backgroundColor="yellow"
+            })
+        }
+        sunlight()
+    </script>
+</body>
+</html>
